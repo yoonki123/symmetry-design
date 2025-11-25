@@ -1,0 +1,100 @@
+.footer {
+  background: linear-gradient(135deg, rgba(53, 74, 217, 0.03) 0%, rgba(90, 110, 235, 0.03) 100%);
+  border-top: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+  padding: var(--system-gap-56) 0 var(--system-gap-32) 0;
+  margin-top: var(--system-gap-56);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--system-gap-24);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--system-gap-40);
+  gap: var(--system-gap-32);
+}
+
+.info {
+  flex: 1;
+}
+
+.text {
+  font-size: var(--system-font-size-20);
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-txt-primary);
+  margin: 0 0 var(--system-gap-8) 0;
+}
+
+.subtext {
+  font-size: var(--system-font-size-14);
+  font-weight: var(--system-font-weight-regular);
+  color: var(--system-color-txt-secondary);
+  margin: 0;
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  gap: var(--system-gap-12);
+  padding: var(--system-gap-16) var(--system-gap-32);
+  background: linear-gradient(135deg, var(--system-color-primary) 0%, #5a6eeb 100%);
+  color: var(--system-color-txt-white);
+  border: none;
+  border-radius: var(--system-radius-80);
+  font-size: var(--system-font-size-16);
+  font-weight: var(--system-font-weight-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(53, 74, 217, 0.3);
+  white-space: nowrap;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(53, 74, 217, 0.4);
+}
+
+.downloadButton:active {
+  transform: translateY(0);
+}
+
+.downloadIcon {
+  transition: transform 0.3s ease;
+}
+
+.downloadButton:hover .downloadIcon {
+  transform: translateY(2px);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: var(--system-gap-32);
+  border-top: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+}
+
+.copyright p {
+  font-size: var(--system-font-size-14);
+  color: var(--system-color-txt-tertiary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .downloadButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .text {
+    font-size: var(--system-font-size-16);
+  }
+}

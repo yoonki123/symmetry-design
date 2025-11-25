@@ -1,0 +1,104 @@
+.section {
+  padding: var(--system-gap-40) 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--system-gap-24);
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--system-gap-24);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.actionButton {
+  background: var(--system-color-primary);
+  border: none;
+  border-radius: var(--system-radius-24);
+  padding: var(--system-gap-40) var(--system-gap-32);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(53, 74, 217, 0.25);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 220px;
+}
+
+.actionButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.actionButton:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(53, 74, 217, 0.35);
+}
+
+.actionButton:hover::before {
+  opacity: 1;
+}
+
+.actionButton:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--system-gap-20);
+  color: var(--system-color-txt-white);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.actionButton:hover .iconWrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.buttonTitle {
+  font-size: var(--system-font-size-24);
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-txt-white);
+  margin: 0 0 var(--system-gap-8) 0;
+  letter-spacing: var(--system-font-letter-spacing-default);
+}
+
+.buttonDescription {
+  font-size: var(--system-font-size-14);
+  font-weight: var(--system-font-weight-regular);
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .buttonGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .actionButton {
+    min-height: 200px;
+    padding: var(--system-gap-32) var(--system-gap-24);
+  }
+}

@@ -1,20 +1,15 @@
-import Test from './Test';
-import Portfolio from './pages/Portfolio';
-import Question from './pages/Question';
-import ExerciseList from './pages/ExerciseList';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import './App.css'
+import Dashboard from './pages/Dashboard'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/" element={<Test />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/question" element={<Question />} />
-        <Route path="/exercise" element={<ExerciseList />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-    </BrowserRouter>
-  );
+    </Router>
+  )
 }
 
-export default App;
+export default App
