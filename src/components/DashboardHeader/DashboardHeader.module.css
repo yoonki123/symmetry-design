@@ -1,0 +1,103 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: var(--system-color-container-bg);
+  border-bottom: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+  z-index: 1000;
+}
+
+.headerContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--system-gap-20) var(--system-gap-24);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.profileSection {
+  position: relative;
+}
+
+.profileButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--system-color-input-surface-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+}
+
+.profileButton:hover {
+  background-color: var(--system-color-primary);
+  border-color: var(--system-color-primary);
+  transform: scale(1.05);
+}
+
+.profileButton:hover .profileIcon {
+  color: var(--system-color-txt-white);
+}
+
+.profileIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--system-color-txt-secondary);
+  transition: color 0.2s ease;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + var(--system-gap-8));
+  right: 0;
+  background-color: var(--system-color-container-bg);
+  border: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+  border-radius: var(--system-radius-8);
+  box-shadow: var(--system-shadow-lg);
+  min-width: 180px;
+  overflow: hidden;
+  z-index: 1001;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownItem {
+  width: 100%;
+  padding: var(--system-gap-12) var(--system-gap-16);
+  text-align: left;
+  font-family: var(--system-font-family-primary);
+  font-size: var(--system-font-size-14);
+  font-weight: var(--system-font-weight-regular);
+  color: var(--system-color-txt-primary);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: var(--system-color-input-surface-default);
+  color: var(--system-color-primary);
+}
+
+.dropdownItem:not(:last-child) {
+  border-bottom: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+}
+

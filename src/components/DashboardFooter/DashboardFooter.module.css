@@ -1,0 +1,57 @@
+.footer {
+  padding: var(--system-gap-40) 0;
+  background-color: var(--system-color-container-bg);
+  border-top: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+}
+
+.footerContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--system-gap-24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  gap: var(--system-gap-12);
+  padding: var(--system-gap-16) var(--system-gap-32);
+  background: linear-gradient(135deg, var(--system-color-primary) 0%, #5b6de8 100%);
+  color: var(--system-color-txt-white);
+  border-radius: var(--system-radius-8);
+  font-family: var(--system-font-family-primary);
+  font-size: var(--system-font-size-16);
+  font-weight: var(--system-font-weight-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--system-shadow-md);
+  border: none;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--system-shadow-lg);
+  background: linear-gradient(135deg, #2a3bc7 0%, #4a5dd7 100%);
+}
+
+.downloadButton:active {
+  transform: translateY(0);
+}
+
+.downloadIcon {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.downloadButton:hover .downloadIcon {
+  transform: translateY(2px);
+}
+
+.downloadText {
+  letter-spacing: var(--system-font-letter-spacing-label);
+}
+

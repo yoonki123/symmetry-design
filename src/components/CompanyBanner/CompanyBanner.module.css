@@ -1,0 +1,36 @@
+.banner {
+  padding-top: 100px;
+  padding-bottom: var(--system-gap-40);
+  background-color: var(--system-color-container-bg);
+}
+
+.bannerContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--system-gap-24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyName {
+  font-family: var(--system-font-family-primary);
+  font-size: 48px;
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-primary);
+  text-align: center;
+  letter-spacing: var(--system-font-letter-spacing-headline);
+  padding: var(--system-gap-32) var(--system-gap-56);
+  background: linear-gradient(135deg, rgba(53, 74, 217, 0.1) 0%, rgba(53, 74, 217, 0.05) 100%);
+  border-radius: var(--system-radius-12);
+  border: var(--system-stroke-2) solid var(--system-color-primary);
+  box-shadow: var(--system-shadow-md);
+}
+
+@media (max-width: 768px) {
+  .companyName {
+    font-size: 32px;
+    padding: var(--system-gap-24) var(--system-gap-32);
+  }
+}
+

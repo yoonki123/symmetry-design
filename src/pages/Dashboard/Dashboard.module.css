@@ -1,0 +1,9 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: var(--system-color-page-bg);
+}
+
+.main {
+  width: 100%;
+}
+
