@@ -1,15 +1,14 @@
-import './App.css'
-import Dashboard from './pages/Dashboard'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-    </Router>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
