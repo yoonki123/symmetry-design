@@ -1,0 +1,18 @@
+.banner {
+  width: 100%;
+  padding: var(--system-gap-32) var(--system-gap-40);
+  background: linear-gradient(135deg, var(--system-color-primary) 0%, #4a5fe8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--system-gap-56);
+}
+
+.companyName {
+  font-size: var(--system-font-size-28);
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-txt-white);
+  letter-spacing: var(--system-font-letter-spacing-headline);
+  text-align: center;
+}
+

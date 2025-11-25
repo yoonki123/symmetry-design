@@ -1,0 +1,120 @@
+/* ==================== Figma Design Tokens ==================== */
+/* Design tokens directly from Figma with system-* prefix */
+
+:root {
+  /* ==================== Colors ==================== */
+
+  /* Primary & Secondary Colors */
+  --system-color-primary: #354ad9;
+  --system-color-secondary: #3B82F6;
+
+  /* Text Colors */
+  --system-color-txt-primary: #20252c;
+  --system-color-txt-secondary: #45505e;
+  --system-color-txt-tertiary: #72859c;
+  --system-color-txt-disabled: #7d92ab;
+  --system-color-txt-white: #ffffff;
+  --system-color-txt-link: #45505e;
+  --system-color-txt-type: #354ad9;
+  --system-color-txt-tab-active: #20252c;
+  --system-color-txt-onboard-default: #20252c;
+  --system-color-txt-label-default: #72859c;
+  --system-color-txt-onSurface-disable: #7d92ab;
+  --system-color-txt-onSurface-white: #ffffff;
+  --system-color-txt-filed-headline: #20252c;
+  --system-color-txt-filed-descript: #45505e;
+
+  /* Background Colors */
+  --system-color-page-bg: #f2f4f7;
+  --system-color-container-bg: #ffffff;
+  --system-color-input-surface-default: #f2f4f7;
+  --system-color-btn-surface: #354ad9;
+  --system-color-paging-surface: #ffffff;
+
+  /* Border & Stroke Colors */
+  --system-color-stroke-gray: #d7dde5;
+  --system-color-stroke-border: rgba(209, 216, 224, 0.4);
+  --system-color-stroke-tab-underline: #20252c;
+  --system-color-stroke-boardlist-gray: #d7dde5;
+
+  /* Palette Colors */
+  --color-palette-neutral-k: #000000;
+  --color-palette-neutral-w: #ffffff;
+  --color-palette-neutral-100: #d7dde5;
+  --color-palette-neutral-600: #72859c;
+  --color-palette-blue-100: #c0c7f3;
+  --color-palette-blue-200: #a2acee;
+  --color-palette-red-400: #ff7c6a;
+
+
+  /* ==================== Typography ==================== */
+
+  /* Font Families */
+  --system-font-family-primary: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Font Sizes */
+  --system-font-size-12: 12px;
+  --system-font-size-14: 14px;
+  --system-font-size-16: 16px;
+  --system-font-size-20: 20px;
+  --system-font-size-24: 24px;
+  --system-font-size-28: 28px;
+
+  /* Font Weights */
+  --system-font-weight-light: 300;
+  --system-font-weight-regular: 500;
+  --system-font-weight-bold: 700;
+
+  /* Letter Spacing */
+  --system-font-letter-spacing-default: 0px;
+  --system-font-letter-spacing-headline: -0.5px;
+  --system-font-letter-spacing-label: 0px;
+  --system-font-letter-spacing-en: 0px;
+  --system-font-letter-spacing-kr-default: 0px;
+  --system-font-letter-spacing-kr-discript: -0.5px;
+
+
+  /* ==================== Spacing ==================== */
+
+  /* Gap Scale (Auto Layout from Figma) */
+  --system-gap-4: 4px;
+  --system-gap-8: 8px;
+  --system-gap-12: 12px;
+  --system-gap-16: 16px;
+  --system-gap-20: 20px;
+  --system-gap-24: 24px;
+  --system-gap-32: 32px;
+  --system-gap-40: 40px;
+  --system-gap-56: 56px;
+
+
+  /* ==================== Border Radius ==================== */
+
+  --system-radius-4: 4px;
+  --system-radius-8: 8px;
+  --system-radius-12: 12px;
+  --system-radius-24: 24px;
+  --system-radius-80: 80px;
+
+
+  /* ==================== Component Sizes ==================== */
+
+  /* Heights */
+  --system-height-input-L: 56px;
+  --system-height-btn-L: 56px;
+
+  /* Strokes */
+  --system-stroke-1: 1px;
+  --system-stroke-2: 2px;
+
+
+  /* ==================== Effects ==================== */
+
+  /* Opacity */
+  --system-effect-opacity-cancel: 0.4;
+
+  /* Shadows */
+  --system-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --system-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --system-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}

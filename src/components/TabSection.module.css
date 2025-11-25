@@ -1,0 +1,58 @@
+/* TabSection Component Styles */
+
+.btnTab {
+  display: flex;
+  gap: var(--system-gap-16);
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  height: 52px;
+}
+
+.btnTabCommon {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--system-gap-8);
+  position: relative;
+  border-radius: var(--system-radius-8);
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.layer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--system-gap-8);
+  align-items: center;
+  padding: var(--system-gap-8) 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.btnTabCommon p {
+  font-family: var(--system-font-family-primary);
+  font-weight: var(--system-font-weight-bold);
+  line-height: normal;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: var(--system-font-size-20);
+  text-align: center;
+  letter-spacing: var(--system-font-letter-spacing-label);
+}
+
+.btnTabCommon.active .layer {
+  border-bottom: var(--system-stroke-2) solid var(--system-color-stroke-tab-underline);
+}
+
+.btnTabCommon.active p {
+  color: var(--system-color-txt-tab-active);
+}
+
+.btnTabCommon:not(.active) p {
+  color: var(--system-color-txt-onSurface-disable);
+}

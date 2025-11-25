@@ -1,0 +1,8 @@
+/* Import fonts */
+@import './styles/fonts.css';
+
+/* Import design tokens */
+@import './styles/tokens.css';
+
+/* Import global styles */
+@import './styles/global.css';

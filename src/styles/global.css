@@ -1,0 +1,161 @@
+/* ==================== Global Styles ==================== */
+/* Base styles and CSS reset for the entire application */
+
+/* ==================== CSS Reset ==================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+body {
+  font-family: var(--system-font-family-primary);
+  font-size: var(--system-font-size-16);
+  font-weight: var(--system-font-weight-regular);
+  line-height: 1.5;
+  color: var(--system-color-txt-primary);
+  background-color: var(--system-color-page-bg);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+
+/* ==================== Typography ==================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--system-font-weight-bold);
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--system-font-size-28);
+}
+
+h2 {
+  font-size: var(--system-font-size-24);
+}
+
+h3 {
+  font-size: var(--system-font-size-20);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--system-color-txt-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--system-color-primary);
+}
+
+
+/* ==================== Form Elements ==================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+
+/* ==================== Scrollbar ==================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--system-color-stroke-gray);
+  border-radius: var(--system-radius-4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--system-color-txt-tertiary);
+}
+
+
+/* ==================== Selection ==================== */
+
+::selection {
+  background-color: var(--system-color-primary);
+  color: var(--system-color-txt-white);
+}
+
+::-moz-selection {
+  background-color: var(--system-color-primary);
+  color: var(--system-color-txt-white);
+}
+
+
+/* ==================== Utility Classes ==================== */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--system-gap-24);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

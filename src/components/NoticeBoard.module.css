@@ -1,0 +1,115 @@
+.noticeSection {
+  width: 100%;
+  padding: 0 var(--system-gap-40);
+  margin-bottom: var(--system-gap-56);
+}
+
+.noticeContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--system-color-container-bg);
+  border-radius: var(--system-radius-12);
+  padding: var(--system-gap-24);
+  box-shadow: var(--system-shadow-sm);
+}
+
+.noticeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--system-gap-16);
+  margin-bottom: var(--system-gap-16);
+  border-bottom: var(--system-stroke-2) solid var(--system-color-stroke-gray);
+}
+
+.noticeTitle {
+  font-size: var(--system-font-size-20);
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-txt-primary);
+  letter-spacing: var(--system-font-letter-spacing-headline);
+}
+
+.viewAllButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--system-radius-4);
+  color: var(--system-color-txt-tertiary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.viewAllButton:hover {
+  background-color: var(--system-color-page-bg);
+  color: var(--system-color-primary);
+}
+
+.noticeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.noticeItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--system-gap-16) 0;
+  border-bottom: var(--system-stroke-1) solid var(--system-color-stroke-gray);
+  transition: background-color 0.2s ease;
+}
+
+.noticeItem:last-child {
+  border-bottom: none;
+}
+
+.noticeItem:hover {
+  background-color: var(--system-color-page-bg);
+  margin: 0 calc(-1 * var(--system-gap-24));
+  padding-left: var(--system-gap-24);
+  padding-right: var(--system-gap-24);
+  border-radius: var(--system-radius-8);
+}
+
+.noticeContent {
+  display: flex;
+  align-items: center;
+  gap: var(--system-gap-12);
+  flex: 1;
+}
+
+.noticeCategory {
+  font-size: var(--system-font-size-14);
+  font-weight: var(--system-font-weight-bold);
+  color: var(--system-color-primary);
+  white-space: nowrap;
+}
+
+.noticeText {
+  font-size: var(--system-font-size-16);
+  font-weight: var(--system-font-weight-regular);
+  color: var(--system-color-txt-primary);
+  flex: 1;
+}
+
+.newBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--system-gap-4) var(--system-gap-8);
+  background-color: #FF6B6B;
+  color: var(--system-color-txt-white);
+  font-size: var(--system-font-size-12);
+  font-weight: var(--system-font-weight-bold);
+  border-radius: var(--system-radius-4);
+  white-space: nowrap;
+}
+
+.noticeDate {
+  font-size: var(--system-font-size-14);
+  color: var(--system-color-txt-tertiary);
+  white-space: nowrap;
+  margin-left: var(--system-gap-16);
+}
+

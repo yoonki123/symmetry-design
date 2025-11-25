@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--system-gap-4);
+  width: 100%;
+  background-color: var(--system-color-container-bg);
+  padding: var(--system-gap-24);
+  border-radius: var(--system-radius-12);
+}
+
+.button {
+  background-color: var(--system-color-btn-surface);
+  border-radius: var(--system-radius-12);
+  padding: 0 var(--system-gap-24);
+  height: var(--system-height-btn-L);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--system-color-txt-onSurface-white);
+  font-family: var(--system-font-family-primary);
+  font-weight: var(--system-font-weight-bold);
+  font-size: var(--system-font-size-16);
+  letter-spacing: var(--system-font-letter-spacing-kr-discript);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: var(--system-gap-12);
+}
+
+.pageButton {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--system-radius-4);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pageButton .icon {
+    width: 6px;
+    height: 12px;
+    background-color: var(--system-color-txt-primary);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.prevIcon {
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1L1 6L5 11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1L1 6L5 11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.nextIcon {
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L5 6L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L5 6L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+
+.pageNumber {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--system-radius-4);
+  background-color: var(--system-color-paging-surface);
+  border: none;
+  cursor: pointer;
+  font-family: var(--system-font-family-primary);
+  font-weight: var(--system-font-weight-regular);
+  color: var(--system-color-txt-link);
+  font-size: var(--system-font-size-14);
+}
+
+.pageNumber.active {
+  background-color: var(--system-color-btn-surface);
+  color: var(--system-color-txt-onSurface-white);
+  font-weight: var(--system-font-weight-bold);
+}
+
+.ellipsis {
+    font-family: var(--system-font-family-primary);
+    font-weight: var(--system-font-weight-regular);
+    color: var(--color-palette-neutral-k);
+    font-size: var(--system-font-size-14);
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: var(--system-gap-4);
+}
+
+.download .icon {
+    width: 28px;
+    height: 28px;
+    background-color: var(--system-color-txt-link);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.79167 0L13.125 2.5V15.5L6.79167 18L0.833336 15.625V2.375L6.79167 0Z" fill-opacity="0.5"/><path d="M6.875 0.125L12.9583 2.5V8.375L6.875 6.125V0.125Z" /><path d="M19.1667 4.375V13.625L13.2083 15.875V9.875L19.1667 7.5V4.375Z" /><path d="M13.2083 2.5L19.1667 4.375V2.5L13.2083 0.125V2.5Z" /><path d="M11.5417 8.33333L13.25 9.08333L15.2083 8.25L17.2083 9.04167L19.125 8.25V6.58333L17.2083 7.375L15.2083 6.58333L13.25 7.41667L11.5417 6.66667V8.33333Z" /><path d="M0.833336 15.625L6.79167 18V6.25L0.833336 3.875V15.625Z" /><path d="M12.9583 15.5L6.875 17.875V9.875L12.9583 12V15.5Z" /><path d="M13.2083 15.875L19.1667 13.625V11.875L13.2083 14.25V15.875Z" /><path d="M0.833313 7.24999L2.74998 6.45833L4.79165 7.33333L6.79165 6.45833L8.58331 7.20833V8.91666L6.79165 8.12499L4.79165 8.99999L2.74998 8.12499L0.833313 8.91666V7.24999Z" fill-rule="evenodd" clip-rule="evenodd" /></svg>');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.downloadLink {
+  font-family: var(--system-font-family-primary);
+  font-weight: var(--system-font-weight-regular);
+  color: var(--system-color-txt-link);
+  font-size: var(--system-font-size-14);
+  text-decoration: none;
+}
