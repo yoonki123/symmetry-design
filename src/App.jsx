@@ -6,13 +6,14 @@ import Modals from './pages/Modals'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+
       <Routes>
         <Route path="/" element={<Test />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/modals" element={<Modals />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
