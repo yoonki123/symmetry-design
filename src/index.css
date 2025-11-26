@@ -1,8 +1,7 @@
-/* Import fonts */
-@import './styles/fonts.css';
+/* Tailwind CSS v4 - Vite 플러그인이 자동으로 처리합니다 */
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
-/* Import design tokens */
-@import './styles/tokens.css';
-
-/* Import global styles */
-@import './styles/global.css';
+@import "./styles/fonts.css" ;
+@import "./styles/tokens.css";
+@import "./styles/global.css" layer(base);
