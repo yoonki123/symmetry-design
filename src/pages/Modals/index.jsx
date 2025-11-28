@@ -1,10 +1,12 @@
 import { useState } from "react"
 import InquiryModal from "../../components/InquiryModal/InquiryModal"
 import InquiryModalV2 from "../../components/InquiryModalV2/InquiryModalV2"
+import CustomerInquiryReplyModal from "../../components/CustomerInquiryReplyModal/CustomerInquiryReplyModal"
 
 export default function Modals() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpenV2, setIsModalOpenV2] = useState(false);
+  const [isModalOpenReply, setIsModalOpenReply] = useState(false);
 
   return (
     <>
@@ -28,6 +30,10 @@ export default function Modals() {
           </button>
         </div>
         <InquiryModalV2 isOpen={isModalOpenV2} onClose={() => setIsModalOpenV2(false)} />
+      </main>
+      <main className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+        <button className="open-modal-btn" onClick={() => setIsModalOpenReply(true)}>모달 열기</button>
+        <CustomerInquiryReplyModal isOpen={isModalOpenReply} onClose={() => setIsModalOpenReply(false)} />
       </main>
     </>
   )
