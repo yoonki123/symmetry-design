@@ -10,6 +10,6 @@ export default {
   
   theme: { extend: {} },
   corePlugins: {
-    preflight: false, 
+    preflight: false, // Tailwind CSS 기본 스타일 제거
   },
 }
