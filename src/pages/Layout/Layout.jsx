@@ -45,7 +45,7 @@ const Layout = () => {
             <div>
               <span className="pr-1 font-bold text-[#20252C]">홍길동</span>님
             </div>
-            <div className="flex flex-row items-center gap-2 text-xs leading-3">
+            <div className="flex flex-row items-center gap-2 text-xs leading-1">
               <div>운동대기</div>
               <div className="flex flex-row items-center gap-1">
                 <button
@@ -58,7 +58,7 @@ const Layout = () => {
               </div>
             </div>
           </div>
-          <button className="group relative">
+          <div className="group relative">
             <img src="/images/header-profile-56.png" alt="profile" />
             {/* 드롭다운 메뉴 */}
             <div className="absolute top-[70px] right-0 w-[123px] bg-white shadow-[0px_4px_16px_2px_rgba(0,0,0,0.1)] rounded-2xl z-[5] py-5 px-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -71,7 +71,7 @@ const Layout = () => {
                 </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
 

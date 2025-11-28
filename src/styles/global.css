@@ -19,7 +19,10 @@ html {
 }
 
 body {
-  font-family: var(--system-font-family-primary);
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
   font-size: var(--system-font-size-16);
   font-weight: var(--system-font-weight-regular);
   line-height: 1.5;
@@ -33,7 +36,6 @@ body {
 #root {
   height: 100%;
 }
-
 
 /* ==================== Typography ==================== */
 
@@ -74,7 +76,6 @@ a:hover {
   color: var(--system-color-primary);
 }
 
-
 /* ==================== Form Elements ==================== */
 
 button {
@@ -94,7 +95,6 @@ select {
   border: none;
   outline: none;
 }
-
 
 /* ==================== Scrollbar ==================== */
 
@@ -116,7 +116,6 @@ select {
   background: var(--system-color-txt-tertiary);
 }
 
-
 /* ==================== Selection ==================== */
 
 ::selection {
@@ -128,7 +127,6 @@ select {
   background-color: var(--system-color-primary);
   color: var(--system-color-txt-white);
 }
-
 
 /* ==================== Utility Classes ==================== */
 
